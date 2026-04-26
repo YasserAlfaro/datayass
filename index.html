@@ -3,68 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IA en Corto :: Punto Data :: Tech Hub</title>
+    <title>Data Yass | IA & Tech</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Rajdhani:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body class="tech-bg">
-    
-    <div class="scanline"></div> <header>
-        <nav>
-            <div class="logo">
-                <i class='bx bx-bot'></i> IA<span class="glitch" data-text="_en_Corto">_en_Corto</span>
+<body class="dark-mode">
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="IMG/icono.jpg" alt="Logo" class="brand-logo">
+                <span class="brand-name">DATA YASS</span>
             </div>
-            <ul>
-                <li><a href="#noticias"><i class='bx bx-news'></i> Noticias</a></li>
-                <li><a href="#tutoriales"><i class='bx bx-code-alt' ></i> Data</a></li>
-                <li><a href="#tiktok"><i class='bx bxl-tiktok' ></i> Feed</a></li>
-            </ul>
-        </nav>
+            <nav class="main-nav">
+                <button onclick="navigateTo('inicio')">Inicio</button>
+                <button onclick="navigateTo('conceptos')">Conceptos</button>
+                <button onclick="navigateTo('noticias')">Noticias</button>
+                <button onclick="navigateTo('aprendizaje')">Aprendizaje</button>
+                <button onclick="navigateTo('acerca')">Acerca de</button>
+            </nav>
+        </div>
+        <div class="ai-banner-effect"></div>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Sistemas de <span class="highlight">Inteligencia Artificial</span> y Analítica de Datos</h1>
-                <p>Noticias, implementaciones en C#/Python y Prompts de Ingeniería.</p>
-                <div class="status-bar">
-                    <span class="status-dot"></span> SISTEMA ONLINE | LATENCY: 22ms | DATA_STREAM: ACTIVE
-                </div>
-            </div>
-            <div class="hero-image-container">
-                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" alt="IA Abstracta" class="hero-img">
-                <div class="image-overlay"></div>
-            </div>
-        </section>
+    <main id="app-container">
+        </main>
 
-        <section id="noticias">
-            <h2 class="section-title"><i class='bx bx-data' ></i> ÚLTIMOS_REGISTROS</h2>
-            <div class="grid-container" id="news-container">
-                </div>
-        </section>
-
-        <section id="tiktok">
-            <h2 class="section-title"><i class='bx bxl-tiktok'></i> TIKTOK_FEED</h2>
-            <div class="tiktok-container">
-                <div class="tiktok-placeholder">
-                    <i class='bx bxl-tiktok tiktok-big-icon'></i>
-                    <p>Visualizando los últimos cortos técnicos.</p>
-                    <a href="https://www.tiktok.com/@tu_usuario_aqui" target="_blank" class="btn-cyber">CONECTAR_CON_PERFIL</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>// PuntoData::IA_en_Corto_V2.0 // © 2026 // Yass_Dev</p>
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
-            </div>
+    <div id="modal-overlay" class="modal-hidden">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            <img id="modal-img" src="" alt="Concepto">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
         </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
