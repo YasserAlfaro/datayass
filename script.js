@@ -231,7 +231,7 @@ function navigateTo(section) {
 					
 					<div class="perfil-layout">
 						<div class="foto-columna">
-							<img src="Files/Foto.PNG" alt="Yasser Alfaro" class="foto-perfil">
+							<img src="files/Foto.PNG" alt="Yasser Alfaro" class="foto-perfil">
 						</div>
 
 						<div class="info-columna">
@@ -252,7 +252,7 @@ function navigateTo(section) {
 							
 							<div class="download-container">
 								<p class="intro-p">Si quieres ver más, descarga mi 
-									<a href="Files/CV_Yasser_AlfaroV3.pdf" target="_blank" download class="cv-link">
+									<a href="files/CV_Yasser_AlfaroV3.pdf" target="_blank" download class="cv-link">
 										CV <span class="download-icon">📥</span>
 									</a>
 								</p>
@@ -296,8 +296,8 @@ function renderConceptosPage() {
 function displayCards(data) {
     const grid = document.getElementById('cardsGrid');
     grid.innerHTML = data.map(item => `
-        <div class="card" onclick="openModal('${item.titulo}', 'IMG/${item.img}', '${item.descripcion}')">
-            <img src="IMG/${item.img}" alt="${item.titulo}">
+        <div class="card" onclick="openModal('${item.titulo}', 'Img/${item.img}', '${item.descripcion}')">
+            <img src="Img/${item.img}" alt="${item.titulo}">
             <h3>${item.titulo}</h3>
             <p>${item.descripcion.substring(0, 100)}...</p>
         </div>
