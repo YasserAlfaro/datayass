@@ -279,6 +279,7 @@ function navigateTo(section) {
 }
 
 // 3. RENDERIZADO DE CONCEPTOS Y FILTRO
+/*
 function renderConceptosPage() {
     const container = document.getElementById('app-container');
     container.innerHTML = `
@@ -292,6 +293,28 @@ function renderConceptosPage() {
     `;
     displayCards(conceptosData);
 }
+*/
+
+
+function renderConceptosPage() {
+    const container = document.getElementById('app-container');
+    container.innerHTML = `
+        <section class="conceptos-section">
+            <h1 class="glow-text">Biblioteca de Conceptos</h1>
+            
+            <div class="search-container-top">
+                <input type="text" id="searchBox" class="search-input-modern" 
+                       placeholder="🔍 Buscar concepto (Ej: Machine Learning...)" 
+                       onkeyup="filterCards()">
+                <p class="search-subtitle">Explora nuestra base de conocimientos visual</p>
+            </div>
+
+            <div id="cardsGrid" class="cards-grid"></div>
+        </section>
+    `;
+    displayCards(conceptosData);
+}
+
 
 function displayCards(data) {
     const grid = document.getElementById('cardsGrid');

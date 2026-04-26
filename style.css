@@ -396,3 +396,56 @@ body {
     font-size: 1.2rem;
     vertical-align: middle;
 }
+
+
+
+/* Contenedor principal de conceptos */
+.conceptos-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Buscador Superior Moderno */
+.search-container-top {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+}
+
+.search-input-modern {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para que no se vea gigante */
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    background: var(--bg-deep);
+    border: 2px solid var(--glass-border);
+    border-radius: 50px; /* Estilo píldora */
+    color: white;
+    outline: none;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.search-input-modern:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+}
+
+.search-subtitle {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Grid Ajustado a pantalla completa */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
