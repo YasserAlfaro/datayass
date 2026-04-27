@@ -449,3 +449,67 @@ body {
     gap: 2rem;
     width: 100%;
 }
+
+
+/* Botón Hamburguesa */
+.hamburger {
+    display: none; /* Oculto en escritorio */
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--accent-blue);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Responsivo para Móviles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Mostrar en móvil */
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Escondido a la derecha */
+        width: 70%;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: 0.4s ease-in-out;
+        border-left: 1px solid var(--glass-border);
+    }
+
+    .main-nav.active {
+        right: 0; /* Aparece al activarse */
+    }
+
+    .main-nav button {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    /* Animación de la hamburguesa a "X" */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

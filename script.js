@@ -347,3 +347,30 @@ window.onclick = (e) => { if(e.target == modal) modal.style.display = 'none'; }
 
 // Carga inicial
 window.onload = () => navigateTo('inicio');
+
+
+
+// Función para abrir/cerrar el menú
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    const burger = document.getElementById('hamburger');
+    
+    nav.classList.toggle('active');
+    burger.classList.toggle('active');
+}
+
+// Modificamos ligeramente la función de navegación para que cierre el menú al hacer clic
+const originalNavigateTo = navigateTo; // Guardamos la original
+
+navigateTo = function(section) {
+    // Cerramos el menú si estamos en móvil
+    const nav = document.getElementById('main-nav');
+    const burger = document.getElementById('hamburger');
+    
+    if(nav.classList.contains('active')) {
+        toggleMenu();
+    }
+    
+    // Llamamos a la lógica original que ya tenías
+    originalNavigateTo(section);
+}
