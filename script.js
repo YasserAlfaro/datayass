@@ -77,6 +77,39 @@ function navigateTo(section) {
 				<section class="noticias-container">
 					<h1 class="glow-text">Noticias Destacadas de la Semana</h1>
 					<div class="news-grid">
+							<div class="news-header">
+						
+						
+						<div class="news-item card">
+							<div>
+								<h3>China bloquea la venta de la IA "Manus" a Meta por 2.000 millones</h3>
+								<span class="news-date">27 de abril, 2026 | 09:15 AM</span>
+							</div>
+							<p>En un movimiento que sacude el mercado global, el gobierno chino ha frenado la adquisición de la plataforma de agentes autónomos Manus por parte de Meta. Las autoridades invocaron leyes de seguridad nacional y protección de algoritmos estratégicos, intensificando la competencia geopolítica por el control de la inteligencia artificial de próxima generación.</p>
+							<a href="https://www.eltiempo.com/mundo/mas-regiones/china-bloquea-venta-de-la-ia-manus-a-meta-por-2-000-millones-de-dolares-prohibida-la-inversion-extranjera-3551104" target="_blank" class="news-link">Leer fuente oficial</a>
+						</div>
+
+						<div class="news-item card">
+							<div class="news-header">
+								<h3>Amazon elimina 15 millones de productos falsificados gracias a modelos de IA</h3>
+								<span class="news-date">27 de abril, 2026 | 11:30 AM</span>
+							</div>
+							<p>Amazon ha reportado un éxito sin precedentes en su lucha contra el fraude comercial. Sus nuevos sistemas de visión por computadora y análisis predictivo lograron detectar e incautar 15 millones de artículos falsos en el último año, demostrando el poder de la IA operativa para garantizar la integridad de las marcas en el comercio electrónico global.</p>
+							<a href="https://www.puromarketing.com/12/217041/pymes-aplican-analitica-avanzada-inteligencia-artificial-procesos-hasta-eficientes" target="_blank" class="news-link">Leer fuente oficial</a>
+						</div>
+
+						<div class="news-item card">
+							<div class="news-header">
+								<h3>Revolución Agéntica: La IA autónoma se convierte en el estándar de 2026</h3>
+								<span class="news-date">27 de abril, 2026 | 11:40 AM</span>
+							</div>
+							<p>Analistas del sector confirman que este trimestre marca la transición definitiva hacia la "IA Agente". A diferencia de los chatbots tradicionales, estos nuevos sistemas ejecutan flujos de trabajo completos de forma autónoma, integrándose profundamente en el desarrollo de software y la gestión de bases de datos a nivel empresarial.</p>
+							<a href="https://www.switas.com/es/articles/the-agentic-ai-revolution-7-breakthroughs-reshaping-tech-in-april-2026" target="_blank" class="news-link">Leer fuente oficial</a>
+						</div>
+						
+						
+						
+						
 						
 						<div class="news-item card">
 							<div class="news-header">
