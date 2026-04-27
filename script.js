@@ -176,7 +176,7 @@ function navigateTo(section) {
 			container.innerHTML = `
 				<section class="aprendizaje-container">
 					<h1 class="glow-text">Ruta de Certificaciones</h1>
-					<p class="intro-p">Contenido educativo diseñado para ingenieros y entusiastas de los datos que buscan validar sus conocimientos en la nube e IA.</p>
+					<p class="intro-p">Aconsejo sacar las siguientes certificaciones para ir adentrando en el mundo de IA y Cloud. Pronto estaré agregando más lugares y formación que creo conveniente que toda persona que quiera adentrarse en el mundo de los datos pueda tener como opción. Este contenido educativo está diseñado para entusiastas de los datos que buscan validar sus conocimientos.</p>
 					
 					<div class="certificaciones-grid">
 						<div class="cert-card glass">
@@ -306,7 +306,7 @@ function renderConceptosPage() {
                 <input type="text" id="searchBox" class="search-input-modern" 
                        placeholder="🔍 Buscar concepto (Ej: Machine Learning...)" 
                        onkeyup="filterCards()">
-                <p class="search-subtitle">Explora nuestra base de conocimientos visual</p>
+                <p class="search-subtitle">Explora nuestra base de conocimientos visual - para mayor detalle ve a mi perfil en TikTok</p>
             </div>
 
             <div id="cardsGrid" class="cards-grid"></div>
