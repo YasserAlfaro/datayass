@@ -77,17 +77,62 @@ function navigateTo(section) {
 				<section class="noticias-container">
 					<h1 class="glow-text">Noticias Destacadas de la Semana</h1>
 					<div class="news-grid">
-							<div class="news-header">
 						
 						
+						
+						<!-- Noticia 1: Llama 3 -->
+    <div class="news-item card">
+        <div class="news-header">
+            <h3>Meta lanza Llama 3: El modelo de código abierto más potente hasta la fecha</h3>
+            <span class="news-date">30 de abril, 2026 | 08:30 AM</span>
+        </div>
+        <p>Meta ha redefinido el panorama del open-source con el lanzamiento de Llama 3. Con capacidades que rivalizan con los modelos propietarios más avanzados, esta nueva arquitectura permite a desarrolladores y empresas ejecutar aplicaciones de IA de alta complejidad localmente, fomentando una nueva ola de innovación en el software independiente.</p>
+        <a href="https://ai.meta.com/blog/meta-llama-3/" target="_blank" class="news-link">Leer fuente oficial</a>
+    </div>
+
+    <!-- Noticia 2: Apple y la IA local -->
+    <div class="news-item card">
+        <div class="news-header">
+            <h3>Apple impulsa la IA en el dispositivo con el lanzamiento de modelos OpenELM</h3>
+            <span class="news-date">29 de abril, 2026 | 11:45 AM</span>
+        </div>
+        <p>En un movimiento estratégico para la privacidad, Apple ha liberado OpenELM, una familia de modelos de lenguaje eficientes diseñados para ejecutarse directamente en el hardware del usuario. Esto marca un cambio hacia la "IA de borde", donde el procesamiento ocurre sin necesidad de enviar datos sensibles a la nube.</p>
+        <a href="https://machinelearning.apple.com/" target="_blank" class="news-link">Leer fuente oficial</a>
+    </div>
+
+    <!-- Noticia 3: NVIDIA Blackwell -->
+    <div class="news-item card">
+        <div class="news-header">
+            <h3>NVIDIA domina la infraestructura de IA con la arquitectura Blackwell</h3>
+            <span class="news-date">28 de abril, 2026 | 02:20 PM</span>
+        </div>
+        <p>La nueva arquitectura de GPU Blackwell de NVIDIA se ha convertido en el estándar de oro para los centros de datos de IA. Con una capacidad de procesamiento hasta 30 veces superior para LLMs, esta tecnología está permitiendo a las organizaciones escalar sus modelos de entrenamiento a niveles de eficiencia energética nunca antes vistos.</p>
+        <a href="https://nvidianews.nvidia.com/" target="_blank" class="news-link">Leer fuente oficial</a>
+    </div>
+
+    <!-- Noticia 4: Microsoft y los Agentes de Copilot -->
+    <div class="news-item card">
+        <div class="news-header">
+            <h3>Microsoft anuncia agentes autónomos para Copilot en entornos empresariales</h3>
+            <span class="news-date">28 de abril, 2026 | 09:10 AM</span>
+        </div>
+        <p>Microsoft ha introducido capacidades de agentes autónomos en su ecosistema Copilot. Estas herramientas no solo sugieren contenido, sino que pueden ejecutar procesos completos de negocio, desde la gestión de inventarios hasta la automatización de flujos de trabajo en equipos de IT, integrándose directamente con Azure.</p>
+        <a href="https://blogs.microsoft.com/ai/" target="_blank" class="news-link">Leer fuente oficial</a>
+    </div>
+						
+						
+						
+						
+
 						<div class="news-item card">
-							<div>
+							<div class="news-header">
 								<h3>China bloquea la venta de la IA "Manus" a Meta por 2.000 millones</h3>
 								<span class="news-date">27 de abril, 2026 | 09:15 AM</span>
 							</div>
 							<p>En un movimiento que sacude el mercado global, el gobierno chino ha frenado la adquisición de la plataforma de agentes autónomos Manus por parte de Meta. Las autoridades invocaron leyes de seguridad nacional y protección de algoritmos estratégicos, intensificando la competencia geopolítica por el control de la inteligencia artificial de próxima generación.</p>
 							<a href="https://www.eltiempo.com/mundo/mas-regiones/china-bloquea-venta-de-la-ia-manus-a-meta-por-2-000-millones-de-dolares-prohibida-la-inversion-extranjera-3551104" target="_blank" class="news-link">Leer fuente oficial</a>
 						</div>
+
 
 						<div class="news-item card">
 							<div class="news-header">
@@ -305,6 +350,77 @@ function navigateTo(section) {
 				</section>
 			`;
 			break;
+			
+		case 'ruta':
+            container.innerHTML = `
+					<section class="inicio-container">
+						<section class="intro">
+							<p>Para convertirte en un experto en Inteligencia Artificial, no basta con saber usar herramientas; es necesario entender la arquitectura detrás de los algoritmos. Esta ruta está diseñada para construir un criterio técnico sólido, ideal tanto para estudiantes como para profesionales del área de sistemas. La imagen siguiente puede darte una idea.</p>
+							<p></p>
+						</section>
+						
+						
+						<!-- Espacio para la imagen de la Ruta -->
+						<div style="text-align: center; margin-bottom: 2rem;">
+							<img src="Img/Ruta.PNG" alt="Infografía Ruta de Aprendizaje IA" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+						</div>
+
+						<!-- Fase 1: Matemáticas -->
+						<article class="phase">
+							<h2><div class="phase-number">1</div> Fundamentos Matemáticos (El Motor)</h2>
+							<p>Antes de escribir la primera línea de código en un modelo, debemos entender el lenguaje en el que "hablan" los datos.</p>
+							<ul>
+								<li><strong>Álgebra Lineal:</strong> Matrices y vectores. Esenciales para entender cómo se procesan los datos en redes neuronales.</li>
+								<li><strong>Cálculo Multivariable:</strong> Gradientes y derivadas. Necesarios para comprender el proceso de optimización (Backpropagation).</li>
+								<li><strong>Estadística y Probabilidad:</strong> Distribuciones, inferencia y teoría de la decisión. La base de la ciencia de datos.</li>
+							</ul>
+						</article>
+
+						<!-- Fase 2: Programación -->
+						<article class="phase">
+							<h2><div class="phase-number">2</div> Dominio del Stack Tecnológico</h2>
+							<p>La implementación requiere herramientas robustas y eficientes para el manejo de grandes volúmenes de información.</p>
+							<ul>
+								<li><strong>Python Avanzado:</strong> Dominio de NumPy, Pandas y Matplotlib para manipulación de datos.</li>
+								<li><strong>Gestión de Datos (SQL/NoSQL):</strong> Como experto en IT, sabes que la IA es tan buena como sus datos; aprender a estructurar y limpiar bases de datos es vital.</li>
+								<li><strong>Entornos de Desarrollo:</strong> Configuración de Jupyter Notebooks y Google Colab.</li>
+							</ul>
+						</article>
+
+						<!-- Fase 3: ML y DL -->
+						<article class="phase">
+							<h2><div class="phase-number">3</div> Machine Learning y Deep Learning</h2>
+							<p>Aquí es donde aplicamos la teoría para que las máquinas "aprendan" patrones.</p>
+							<ul>
+								<li><strong>Aprendizaje Supervisado:</strong> Regresiones lineales, logística y árboles de decisión.</li>
+								<li><strong>Redes Neuronales:</strong> Arquitecturas Densas, CNN (Visión) y RNN/Transformers (Lenguaje).</li>
+								<li><strong>Frameworks:</strong> Especialización en <span class="highlight">PyTorch</span> o <span class="highlight">TensorFlow</span>.</li>
+							</ul>
+						</article>
+
+						<!-- Fase 4: Despliegue -->
+						<article class="phase">
+							<h2><div class="phase-number">4</div> MLOps e Ingeniería de Sistemas</h2>
+							<p>Un modelo en un notebook no sirve de nada si no está en producción.</p>
+							<ul>
+								<li><strong>API Development:</strong> Exponer modelos mediante FastAPI o Flask.</li>
+								<li><strong>Contenedores:</strong> Uso de Docker para asegurar la portabilidad del modelo.</li>
+								<li><strong>Monitoreo:</strong> Asegurar que el rendimiento del modelo no decaiga con datos reales.</li>
+							</ul>
+						</article>
+
+						<!-- Proyecto Final -->
+						<section class="project-card">
+							<h2>🚀 Proyecto Final: Sistema de Agentes Autónomos</h2>
+							<p>Como vimos en nuestra infografía, el objetivo final es integrar todo lo aprendido en un proyecto tangible:</p>
+							<p><em>"Desarrollar un sistema de agentes inteligentes capaces de analizar una base de datos corporativa en tiempo real, generar predicciones de mercado y presentar los resultados mediante un dashboard automatizado."</em></p>
+							<p>Este proyecto demuestra dominio en matemáticas, programación de sistemas y despliegue de IA.</p>
+						</section>
+					</section>
+				`;
+            break;	
+			
+			
         case 'conceptos':
             renderConceptosPage();
             break;

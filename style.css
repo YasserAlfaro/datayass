@@ -513,3 +513,62 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
+.phase {
+            background: var(--card-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .phase h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .phase-number {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--dark-bg);
+            color: white;
+            margin-top: 4rem;
+        }
